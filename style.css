@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #fcfdf7;
+    /* background-color: #FFEEEE; */
+}
+
+.remove-btn {
+    width: 70%;
+    height: 70%;
+
+    /* margin-left: 23.8%; */
+    border-radius: 10px;
+    /* border-radius: 50%; */
+}
+
+.remove-btn:hover {
+    box-shadow: 0 0 10px 5px rgba(188, 120, 174, 0.65);
+}
+
+.cross {
+    border-radius: 10px;
+}
+
+.cross:hover {
+    box-shadow: 0 0 10px 5px rgba(233, 147, 216, 0.65);
+    animation: rotate 4s 1s infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+    /* 25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    } */
+}
+
+.plus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+.plus:hover {
+    box-shadow: 0 0 10px 10px rgba(13, 225, 233, 0.94);
+    animation: pulse 1s linear 1s infinite;
+}
+.add-btn {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.check {
+    display: none;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.check:hover {
+    box-shadow: 0 0 10px 10px rgba(17, 245, 55, 0.84);
+    animation: pulse 800ms linear 1s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        filter: brightness(1.2);
+        transform: scale(1.1);
+    }
+}
+
+.toolbox-cont {
+    height: 5rem;
+    background-color: #A91079;
+    /* width: 5rem; */
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont>* {
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+
+.toolbox-priority-cont>*:hover {
+    box-shadow: 0 0 10px 5px rgba(188, 120, 174, 0.65);
+}
+
+.toolbox-priority-cont {
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #2E0249;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action-btn-cont {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #2E0249;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.action-btn-cont>* {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 50%; */
+    font-size: 2rem;
+    color: #CDF0EA;
+}
+
+.color {
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 2px;
+}
+
+.most-impt {
+    background-color: #F32424 !important;
+}
+
+.more-impt {
+    background-color: #FFAB76 !important;
+}
+
+.less-impt {
+    background-color: #D4D925 !important;
+}
+
+.least-impt {
+    background-color: #FFEE63 !important;
+}
+
+button {
+    width: 2rem;
+    height: 2rem;
+}
+
+.modal-cont {
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;
+    top: calc((100vh - 50vh)/2);
+    left: calc((100vw - 45vw)/2);
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+
+.textarea-cont:focus-visible {
+    background-color: #070707;
+}
+
+.textarea-cont {
+    color: white;
+    height: 90%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 29, 29);
+    /* to remove the ANNOYING resize property of textarea */
+    resize: none;
+    font-size: 1.2rem;
+    padding: 2rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.priority-colors-cont {
+    height: 10%;
+    width: 100%;
+    background-color: #2E0249;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color {
+    height: 70%;
+    width: 13%;
+    background-color: lightpink;
+    border-radius: 2px;
+}
+
+.active {
+    /* border: thin solid; */
+    box-shadow: 0 0 4px 1.9px rgb(255, 255, 255);
+}
+
+.top {
+    display: flex;
+    height: 91%;
+    /* width: 100%; */
+    width: 19.6rem;
+}
+
+.bottom {
+    display: flex;
+    height: 9%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.ticket-cont {
+    height: 14.7rem;
+    width: 20.3rem;
+    /* background-color: rgb(10, 80, 103); */
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 6px; */
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    overflow: hidden;
+    transition: transform .4s;
+}
+
+.ticket-cont:hover {
+    transform: scale(1.2);
+}
+
+.left {
+    width: 2%;
+}
+
+.left:hover {
+    width: 5%;
+    overflow: auto !important;
+}
+
+.right {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ticket-color {
+    height: 100%;
+    /* width: 2%; */
+}
+
+.ticket-id {
+    text-align: center;
+    height: 2rem;
+    /* width: 98%; */
+    background-color: #f9c8d7;
+    padding: 0.3rem;
+    font-family: 'Arima', cursive;
+}
+
+.ticket-lock {
+    position: absolute;
+    cursor: pointer;
+}
+
+.task-area {
+    height: calc(100% - 2rem);
+    /* width: 98%; */
+    /* color: white; */
+    background-color: #c8f4ffa4;
+    padding: 0.5rem;
+    overflow: auto !important;
+    width: 100%;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    /* font-family: 'Zilla Slab', serif; */
+}
+
+.main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    justify-content: space-around;
+    gap: 2rem;
+    /* align-items: center; */
+}
+
+.topmost {
+    /* width: ; */
+    height: 4.5%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: none !important;
+    z-index: 1;
+}
+
+.remove {
+    color: red;
+    height: 23px;
+    /* font-size: 400%; */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.remove:hover {
+    box-shadow: 0 0 3px 1px rgba(255, 101, 101, 0.995);
+    animation: rotate 2s infinite;
+}
+

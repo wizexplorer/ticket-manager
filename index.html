@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA Ticket Management Clone</title>
+    <link rel="icon" href="https://img.icons8.com/dusk/64/000000/combi-ticket.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/09219b5960.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima&family=Comfortaa&family=Nanum+Gothic&family=Zilla+Slab:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- TOOLBOX -->
+    <div class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="most-impt color"></div>
+            <div class="more-impt color"></div>
+            <div class="less-impt color"></div>
+            <div class="least-impt color"></div>
+        </div>
+        <div class="action-btn-cont">
+            <div class="remove-btn">
+                <img class="cross" src="https://img.icons8.com/nolan/67/delete-sign.png"/>
+                <!-- <img class="cross" src="https://cdn-icons-png.flaticon.com/512/982/982649.png" /> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-cont">
+        <!-- <div class="ticket-cont">
+            <div class="topmost"><img class="remove" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyB0cmFuc2Zvcm09IiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNODYsMTU4LjI0Yy0zOS44OTcwNSwwIC03Mi4yNCwtMzIuMzQyOTUgLTcyLjI0LC03Mi4yNHYwYzAsLTM5Ljg5NzA1IDMyLjM0Mjk1LC03Mi4yNCA3Mi4yNCwtNzIuMjRoMGMzOS44OTcwNSwwIDcyLjI0LDMyLjM0Mjk1IDcyLjI0LDcyLjI0djBjMCwzOS44OTcwNSAtMzIuMzQyOTUsNzIuMjQgLTcyLjI0LDcyLjI0eiIgZmlsbD0iI2U5MTkxOSI+PC9wYXRoPjxnIGlkPSJvcmlnaW5hbC1pY29uIiBmaWxsPSIjZWNmMGYxIj48cGF0aCBkPSJNMzguNDQyLDM0LjQ4NmwtMy45NTYsMy45NTZsNDcuNTU4LDQ3LjU1OGwtNDcuNTU4LDQ3LjU1OGwzLjk1NiwzLjk1Nmw0Ny41NTgsLTQ3LjU1OGw0Ny41NTgsNDcuNTU4bDMuOTU2LC0zLjk1NmwtNDcuNTU4LC00Ny41NThsNDcuNTU4LC00Ny41NThsLTMuOTU2LC0zLjk1NmwtNDcuNTU4LDQ3LjU1OHoiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4="/></div>
+            <div class="top">
+                <div class="left">
+                    <div class="ticket-color least-impt"></div>
+                </div>
+                <div class="right">
+                    <div class="ticket-id">#sample-id</div>
+                    <div class="task-area">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quam, ut ab perspiciatis explicabo
+                        magnam quia iure inventore atque architecto. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="ticket-lock">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- MODAL CONTAINER -->
+    <div class="modal-cont">
+        <textarea class="textarea-cont" spellcheck="false" placeholder="Enter your task..."></textarea>
+        <div class="priority-colors-cont">
+            <div class="most-impt priority-color"></div>
+            <div class="more-impt priority-color"></div>
+            <div class="less-impt priority-color"></div>
+            <div class="least-impt priority-color active"></div>
+        </div>
+    </div>
+    <div class="add-btn">
+        <img class="plus" src="https://img.icons8.com/ios/50/000000/plus--v1.png" />
+        <img class="check" src="https://img.icons8.com/ios-glyphs/30/000000/checked--v1.png" />
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
